@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Manager</h1>
+
+        <div id="inputSection">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name"><br>
+
+            <label for="expense">Expense:</label>
+            <input type="number" id="expense" placeholder="Enter amount"><br>
+
+            <button id="addExpenseBtn">Add Expense</button>
+        </div>
+
+        <div id="expenseSection" style="display: none;">
+            <h3>Expenses</h3>
+            <ul id="expenses"></ul>
+
+            <div class="button-container">
+                <button id="calculateBtn" style="display: none;">Calculate Settlements</button>
+            </div>
+        </div>
+
+        <div id="perPersonSection" style="display: none;">
+            <h3>Per Person Amount</h3>
+            <p id="perPersonAmount"></p>
+        </div>
+
+        <div id="settlementSection" style="display: none;">
+            <h3>Settlements</h3>
+            <ul id="settlements"></ul>
+        </div>
+
+        <div id="totalReceivedSection" style="display: none;">
+            <h3>Total Received</h3>
+            <ul id="totalReceived"></ul>
+        </div>
+
+        <div id="actionButtons">
+            <button id="printPDFBtn">Print PDF</button>
+            <button id="clearDataBtn">Clear Data</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

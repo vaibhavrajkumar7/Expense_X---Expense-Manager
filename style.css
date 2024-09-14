@@ -1,0 +1,157 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+h1, h2 {
+    color: #007BFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="number"],
+button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #007BFF;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Expense List Styling */
+ul#expenses {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul#expenses li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#expenses li button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul#expenses li button:hover {
+    background-color: #c82333;
+}
+
+ul#expenses li button.editBtn {
+    background-color: #28a745;
+}
+
+ul#expenses li button.editBtn:hover {
+    background-color: #218838;
+}
+
+/* Output Styling */
+#perPersonSection,
+#settlementSection,
+#totalReceivedSection {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+#perPersonAmount {
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+#settlements li,
+#totalReceived li {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#settlements li:last-child,
+#totalReceived li:last-child {
+    border-bottom: none;
+}
+
+/* Buttons Section */
+button#addExpenseBtn,
+button#calculateBtn,
+button#printPDFBtn,
+button#clearDataBtn {
+    width: 100%;
+}
+
+button#addExpenseBtn,
+button#calculateBtn {
+    background-color: #007BFF;
+}
+
+button#printPDFBtn,
+button#clearDataBtn {
+    background-color: #28a745;
+}
+
+button#printPDFBtn:hover,
+button#clearDataBtn:hover {
+    background-color: #218838;
+}
+
+button#addExpenseBtn:hover,
+button#calculateBtn:hover {
+    background-color: #0056b3;
+}
